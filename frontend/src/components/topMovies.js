@@ -43,6 +43,7 @@ export default class Movies extends React.Component {
 
     const movieInfo = `Film ID: ${film.film_id} 
     Category ID: ${film.category_id} 
+    Description: ${film.description}
     Rented: ${film.rented}`;
     
 
