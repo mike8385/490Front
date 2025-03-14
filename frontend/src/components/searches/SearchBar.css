@@ -45,8 +45,3 @@ input:focus {
 .texted{
     color: black;
 }
-
-.input2::placeholder {
-    color: black;  /* Change this to any color */
-    opacity: 1;  /* Ensures full visibility */
-}

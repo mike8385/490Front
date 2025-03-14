@@ -1,0 +1,74 @@
+/* info.css */
+
+/* Container for the entire component */
+.info-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: palevioletred;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+.info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Each row in the form */
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: pink;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+/* Label styling */
+.form-row label {
+    font-weight: bold;
+    min-width: 100px; /* Fixed width for labels */
+    color: #333;
+}
+
+/* Value (paragraph) styling */
+.form-row p {
+    margin: 0;
+    color: #555;
+}
+
+/* Update button styling */
+.updatebtn {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: pink;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.updatebtn:hover {
+    background-color: teal;
+}
+
+.ul {
+    color:black;
+}
+
+.returnbtn{
+    align-self: flex-start;
+    padding: 5px 20px;
+    background-color: pink;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}

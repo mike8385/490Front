@@ -39,26 +39,7 @@
     }
   }
   
-  .box {
-    color: pink;
-    width: 1200px;
-    height: 55px;
-    border: 5px solid white;
-    padding: 25px;
-    margin: 20px; 
-    
-  
-  }
-  
-  .box ul {
-    text-align: right;
-    color: pink;
-    margin-top: -70px;
-  }
-  
-  .box img {
-    margin-top: -15px;
-  }
+
   
   li{
     display:inline;
@@ -71,19 +52,33 @@
     display: flex;
     gap: 100px; /* Adds space between buttons */
     align-items: center;
+    font-size: 15px;
   }
   
-  .sakila{
-  color: lightblue;
-  align-self: flex-start;
-  align-self: center;
-  margin-left: -1000px;
-  margin-bottom: -90px;
-  font-family: 'Arial', sans-serif;
-  
+
+
+  .button-container-five {
+    display: flex;
+    justify-content: space-evenly; /* Equal spacing between buttons */
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%; /* Adjust width if needed */
+    margin: auto;
+
+    
   }
 
-FButton {
-    font-size: 10000;
-    margin: 100px;
+  .button-container-five button {
+    background-color: hotpink; /* Change to your desired color */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container-five button:hover {
+    background-color: pink; /* Darker shade for hover effect */
 }

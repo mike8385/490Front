@@ -54,7 +54,7 @@ export default class Actors extends React.Component {
         {actorName}
         </button>
         }
-        >
+        position="top center">
         <PopupInfo info={actorInfo} />
         </Popup>
     );

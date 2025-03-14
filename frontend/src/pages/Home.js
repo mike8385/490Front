@@ -55,7 +55,10 @@ export default function Home() {
                 </div>
               </div>
               <div className='actors'>
+              <h2>Top 5 Actors </h2>
+              <div className="button-container-five">
               <Actors actors={actors}/>
+              </div>
               </div>
             </header>
           </div>
@@ -68,23 +71,3 @@ export default function Home() {
   
 
 
-  function PopupInfo({info}) {
-    return (
-      <div>
-      {info.split("\n").map((line, index) => (
-        <p key={index}>{line}</p>
-      ))}
-      </div>
-    );
-  }
-
- 
-function PopupInfoActor({info}) {
-    return (
-      <div>
-      {info.split("\n").map((line, index) => (
-        <p key={index}>{line}</p>
-      ))}
-      </div>
-    );
-}

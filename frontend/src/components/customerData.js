@@ -7,10 +7,9 @@ import 'reactjs-popup/dist/index.css';
 
 
 
-
-export default class Movies extends React.Component {
+export default class Customers extends React.Component {
     state = {
-        films: [],
+        Customers: [],
     };
     componentDidMount() {   
         /*
@@ -22,7 +21,7 @@ export default class Movies extends React.Component {
         */
         axios
             .get(   //telling the app to make a GET request
-                `http://127.0.0.1:5000/topfilms`
+                `http://127.0.0.1:5000/`
             )
             .then((response) => { //How to handle the data from the server
                 this.setState({ films: Array.isArray(response.data.films) ? response.data.films : [] });
@@ -39,36 +38,7 @@ export default class Movies extends React.Component {
     }
 }
 
-  function FButton({filmName, index, film, onClick}) {
 
-    const movieInfo = `Film ID: ${film.film_id} 
-    Category ID: ${film.category_id} 
-    Description: ${film.description}
-    Rented: ${film.rented}`;
-    
-
-    return (
-      <Popup trigger=
-      {<button className='filmbutton' onClick={onClick}>
-        <img src={ticket} width={100} height={100}className='Ticket'/>
-        {filmName}
-        </button>
-        }
-        >
-        <PopupInfo info={movieInfo} />
-        </Popup>
-    );
-  }
-
-  function PopupInfo({info}) {
-    return (
-      <div>
-      {info.split("\n").map((line, index) => (
-        <p key={index}>{line}</p>
-      ))}
-      </div>
-    );
-  }
 
 
 /*

@@ -1,9 +1,16 @@
-import React from 'react';
+import React from 'react'
 import axios from 'axios';
 
+export const Movies = ( { films })=> {
+    return (
+    <div> 
+        {films.map(film => <div>{film.title}</div>)}
+    </div>
+    )
+};
 
 
-export default class PersonList extends React.Component {
+export default class M extends React.Component {
     state = {
         persons: []
     }
@@ -25,5 +32,3 @@ export default class PersonList extends React.Component {
         )
     }
 }
-
-

@@ -39,7 +39,6 @@ return (film.title && film.title.toLowerCase().includes(value.toLowerCase())) ||
         <div className="input-wrapper">
         <FaSearch id="search-icon"/>
         <input 
-        className='input2'
         placeholder='Type to search...' 
         value={input} 
         onChange={(e) => handleChange(e.target.value)}/>

@@ -1,0 +1,130 @@
+.table table-sm{
+    width: 10px;
+    
+}
+
+.table-container {
+    width: 80%;  /* Adjust width as needed (e.g., 50%, 80%, 600px) */
+    margin: 0 auto; /* Center the table horizontally */
+    background-color: pink; /* Optional: Background color */
+    padding: 10px;
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0px 4px 10px rgba(1, 3, 100, .40); /* Optional: Soft shadow */
+}
+
+
+.table.table-sm th,
+.table.table-sm td {
+    background-color: pink !important; /* Apply pink to table cells */
+    color: black !important; /* Ensure text is visible */
+    border-color: black;
+}
+
+.button {
+    right: 200px;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between; /* Pushes pagination left and button right */
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.new-customer-btn {
+    background-color: palevioletred;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.new-customer-btn:hover {
+    background-color: rgb(180, 80, 120);
+}
+
+#trash-icon {
+    background-color: transparent;
+    background: none;
+}
+
+.trashbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.popup-content {
+    background-color: palevioletred;
+    border: pink;
+    justify-content: center;
+    
+}
+
+.popup-arrow {
+    color: palevioletred; /* Same as the popup background */
+    border: none;
+}
+.trshconf {
+    background-color: transparent;
+    border: none;
+    align-items: center;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    color: black;
+
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+.save-customer-btn{
+    color: black;
+    background-color: pink;
+}
+
+.updatebtn {
+    display: block; /* Makes the button behave like a block element */
+    width: 200px; /* Adjust the width to your preference */
+    margin: 20px auto; /* Centers the button horizontally and adds vertical spacing */
+    padding: 10px 20px; /* Add some padding for a nicer button size */
+    background-color: palevioletred; /* Bootstrap's btn-info color, or you can choose your own */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Adds rounded corners */
+    transition: background-color 0.3s ease; /* Adds a smooth transition for the hover effect */
+    
+}
+
+
+.updatebtn:hover {
+    background-color: teal;
+}
+
+.form-control{
+    background-color: pink;
+}
+
+.trashbtn {
+    color: black;
+}
+.trashbtn:hover {
+    color: white;
+}
+
+.search-input {
+    background-color: pink;
+}
+
+
+.save-customer-btn:hover{
+    background-color: teal;
+}
